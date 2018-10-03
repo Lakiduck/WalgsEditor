@@ -1,0 +1,25 @@
+{
+  "name": "walgseditor",
+  "version": "1.0.0",
+  "description": "Lightweight Cloud Based Text Editor",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lakiduck/WalgsEditor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lakiduck/WalgsEditor/issues"
+  },
+  "homepage": "https://github.com/Lakiduck/WalgsEditor#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}

@@ -1,0 +1,12 @@
+#files{
+  width: 20%;
+  display: inline-block;
+}
+
+#editor{
+  position: fixed;
+  display: inline-block;
+  background-color: #EEEEEE;
+  width: 70%;
+  border-left: 1px solid #ccc;
+}
