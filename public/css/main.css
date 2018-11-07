@@ -10,3 +10,16 @@
   width: 70%;
   border-left: 1px solid #ccc;
 }
+
+#files p{
+  opacity: 0.5;
+}
+
+#files #fileprompt{
+  opacity: 1;
+}
+
+#files p:hover{
+  opacity: 1;
+  cursor: pointer;
+}
