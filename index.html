@@ -10,17 +10,33 @@
 
 </head>
 <body>
-  <div id="files">
-    <p id="fileact">Files</p>
-    <p id="fileprompt">{{ message }}</p>
-  </div>
-  <div id="editor">
-    <p>Editor</p>
-  </div>
+  <div id="pop">
+    <modal v-if="showModal" @close="showModal=false">
 
+    </modal>
+    <div id="files">
+      <p id="fileact" @click="showModal=true">Files</p>
+      <p id="fileprompt">{{ message }}</p>
+    </div>
+    <div id="editor">
+      <p>Editor</p>
+    </div>
+  </div>
 </body>
 
+<script type="text/x-template" id="modal-template">
+  <transition name="modal">
+    <div class="modal-mask">
+      <div class="modal-wrapper">
+        <div class="modal-container">
+          <p> This is a test Modal</p>
+          <button @click="$emit('close')">Close</button>
+        </div>
+      </div>
+    </div>
+  </transition>
 
+</script>
 
 
 </html>

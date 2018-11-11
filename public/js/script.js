@@ -6,21 +6,22 @@ window.onload = function(){
     }
   });
 
-  /*new Vue({
-    el: '#fileact',
-    methods: {
-      show: function(){
-        var fileInsert = document.createElement('input');
-        document.getElementId("files").appendChild(fileInsert);
-        fileInsert.attr('autocomplete', 'off');
-        fileInsert.attr('placeholder', 'Insert File Name Here');
-        fileInsert.attr('v-model', 'newTodo');
-        fileInsert.attr('@keyup.enter', 'addTodo');
-      }
+  Vue.component('modal', {
+    template: '#modal-template'
+  });
+
+  var pop = new Vue({
+    el: '#pop',
+    data: {
+      message: '',
+      showModal: false
     }
+  });
 
-  });*/
 
+
+
+/*
   document.getElementById('fileact').addEventListener('click', function(){
       var fileInsert = document.createElement('input');
       if($("#files").children('input').length == 0){
@@ -29,5 +30,5 @@ window.onload = function(){
         $("#fileprompt").hide();
       }
   });
-
+*/
 }
