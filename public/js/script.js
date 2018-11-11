@@ -23,8 +23,11 @@ window.onload = function(){
 
   document.getElementById('fileact').addEventListener('click', function(){
       var fileInsert = document.createElement('input');
-      document.getElementById("files").appendChild(fileInsert);
-      $("#fileprompt").hide();
+      if($("#files").children('input').length == 0){
+        document.getElementById("files").appendChild(fileInsert);
+        $("#files").children('input').addClass("inputBox");
+        $("#fileprompt").hide();
+      }
   });
 
 }
